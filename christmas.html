@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
+    <style>
+        *{box-sizing: border-box}
+        #vid{position: fixed;right: 0;bottom: 0;min-width: 100%; min-height: 100%;}
+        #greet{display: none;position: fixed;left:50%;bottom:5%;text-transform: capitalize;font-size: 1.2rem;}
+        #intro{position:fixed; color: hsla(0, 100%, 100%, 0.0);font-family: 'Mountains of Christmas', cursive;
+            text-align:center;font-size: 6rem; font-weight: bold;left: 25%;top: 42%;animation: greetings 16s forwards;}
+        @keyframes greetings{
+            0% {color: hsla(0, 100%, 100%, 0.0);text-shadow: 0px 0px 0px;}
+            50% {color: hsla(0, 100%, 100%, 0.1);text-shadow: 0px 0px 0px;}
+            75% {color: hsla(120, 50%, 50%, 1);text-shadow: 0px 0px 5px, 0px 0px 5px;}
+            100% {color: hsla(120, 50%, 50%, 1);text-shadow: 0px -8px 10px white, 0px -8px 10px white;}
+        }
+    </style>
+    <title>Boldog Karácsonyt!</title>
+</head>
+<body>
+    <video autoplay muted loop id="vid"><source src="christmasFullHD.mp4" type="video/mp4"></video>
+    <div id="intro">
+        Boldog Karácsonyt Kívánok !<br/>
+        Merry Christmas !
+    </div>
+    <input type="text" id="greet" name="greet" placeholder="írj be egy nevet" width:>
+</body>
+</html>
